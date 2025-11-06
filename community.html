@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fundify - Feed Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<style>
+  .footer {
+  font-size: 0.9rem;
+  background-color: #fff;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.footer .text-purple {
+  color: #6f42c1 !important;
+}
+
+.footer a.text-muted:hover {
+  color: #6f42c1 !important;
+  text-decoration: underline;
+}
+
+.footer i {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer i:hover {
+  color: #9370db;
+}
+
+</style>
+<body>
+  
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- CS Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="cs-logo me-2">CS</div>
+            <span class="connectsphere-text ms-2" style=" font-family: 'Slackey', cursive;">ConnectSphere</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link  " href="#"><i class="fas fa-home"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#"><i class="fas fa-search"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="#"><i class="fas fa-bell"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-primary me-2" href="login.html" style=" font-family: 'Slackey', cursive;">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary" href="signup.html" style=" font-family: 'Slackey', cursive; ">Signup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <aside class="sidebar p-3">
+        <h4 class="text-white mb-4" style="font-family: 'Slackey', cursive;">ConnectSphere</h4>
+        <ul class="nav flex-column text-white animate-slide-up" >
+            <li class="nav-item my-2">
+                <a class="nav-link" href="index.html" data-target="home-section" id="home-link"><i class="fas fa-home me-2 menu-item"></i><button> Home</button></a>
+              </li>
+              <li class="nav-item my-2">
+                <a class="nav-link" href="community.html" data-target="commuity-section" id="feed-link"><i class="fas fa-compass me-2 menu-item"></i> Feed</a> 
+              </li>
+              <li class="nav-item my-2">
+                <a class="nav-link" href="group-chats.html" data-target="message-section" id="messages-link"><i class="fas fa-envelope me-2 menu-item"></i> Messages <span class="badge bg-purple ms-1">7</span></a>
+              </li>
+              <li class="nav-item my-2">
+                <a class="nav-link" href="group-chats.html" data-target="groups-section"id="groups-link"><i class="fas fa-money-bill me-2 menu-item"></i> Groups</a>
+              </li>
+              <li class="nav-item my-2">
+                <a class="nav-link" href="challenges.html" id="challenges-link" data-target="challanges-section"><i class="fas fa-gift me-2 menu-item"></i> Challenges</a>
+              </li>
+              
+        </ul>
+        <div class="mt-auto">
+          <button class="btn btn-outline-light w-100 mb-2">Invite a Friend</button>
+          <button class="btn btn-purple w-100">Become a Creator</button>
+        </div>
+      </aside>
+    
+      <!-- Right Panel -->
+      <aside class="right-panel p-3">
+        <div class="fundraiser-card bg-white p-3 rounded shadow-sm mb-4 animate-slide-up">
+          <h6 class="fw-bold">Fundraisers</h6>
+          <div class="mt-2">
+            <img src="avatar5.jpg" alt="Model" class="img-fluid rounded mb-2" />
+            <p><strong>Ava Wilson</strong> - Reveal Your Next Big Modeling Project!</p>
+            <p class="text-purple fw-bold">$1,980.00</p>
+            <div class="progress mb-2">
+              <div class="progress-bar bg-purple" style="width: 78%;"></div>
+            </div>
+            <a href="#" class="text-purple">View More</a>
+          </div>
+        </div>
+        <div class="container my-4">
+          <div class="row gy-4">
+            <!-- Trending Topics -->
+            <div class="col-md-6">
+              <div class="custom-card trending-card p-4 shadow-sm rounded">
+                <h5 class="mb-3 text-purple">
+                  <i class="bi bi-graph-up-arrow me-2"></i>Trending Topics
+                </h5>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge trending-badge">#TechTalks</span>
+                  <span class="badge trending-badge">#CodeReview</span>
+                  <span class="badge trending-badge">#WebDev</span>
+                  <span class="badge trending-badge">#CloudComputing</span>
+                  <span class="badge trending-badge">#AI</span>
+                  <span class="badge trending-badge">#ML</span>
+                  <span class="badge trending-badge">#Devops</span>
+                </div>
+              </div>
+            </div>
+            
+        
+            <!-- Upcoming Events -->
+           
+          </div>
+        </div>
+      </aside>
+    
+      <!-- Main Content -->
+      <main class="main-content home-section section-content" id="home-section">
+        <header class="d-flex justify-content-between align-items-center mb-4">
+          <h4>Home</h4>
+          <div>
+            <button class="btn btn-light me-2"><i class="far fa-heart"></i></button>
+            <button class="btn btn-dark">Get in Touch</button>
+          </div>
+        </header>
+    
+        <!-- Feed -->
+        <div class="feed feeds-section section-content active" id="feed-section">
+          
+          <div class="card mb-4 shadow-sm border-0 animate-slide-up">
+            <div class="card-body-post ">
+              <div class="d-flex align-items-start mb-3">
+                <img src="avatar3.jpg" class="rounded-circle me-3" width="50" height="50" alt="User Avatar">
+                <textarea class="form-control border-0 shadow-sm" rows="2" placeholder="What's on your mind?" style="resize: none;"></textarea>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex gap-3 text-purple">
+                  <span class="cursor-pointer"><i class="fas fa-image me-1"></i> Photo</span>
+                  <span class="cursor-pointer"><i class="fas fa-video me-1"></i> Video</span>
+                  <span class="cursor-pointer"><i class="fas fa-smile me-1"></i> Feeling</span>
+                </div>
+                <button class="btn btn-purple px-4">Post</button>
+              </div>
+            </div>
+          </div>
+           <!-- post card -->
+          <div class="card mb-4 shadow-sm border-0 animate-slide-up">
+            <div class="card-body-post">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img src="avatar4.jpg" class="rounded-circle me-3" width="50" height="50" alt="User Avatar">
+                  <div>
+                    <h6 class="mb-0 fw-bold">Alex Johnson</h6>
+                    <small class="text-muted">@alexj • 2h ago</small>
+                  </div>
+                </div>
+                <div>
+                  <i class="fas fa-ellipsis-h text-muted"></i>
+                </div>
+              </div>
+        
+              <p class="mt-3 mb-2">
+                Had an amazing time at the community meet-up today! The energy was off the charts!
+              </p>
+          
+              
+          
+              <div class="d-flex justify-content-between text-muted small">
+                <span><i class="far fa-thumbs-up me-1 text-purple"></i>132 Likes</span>
+                <span><i class="far fa-comment me-1 text-purple"></i>27 Comments</span>
+                <span><i class="fas fa-share me-1 text-purple"></i>Share</span>
+              </div>
+            </div>
+          </div>
+<!-- 
+          post 2 -->
+        
+<!-- post3           -->
+<div class="card mb-4 shadow-sm border-0 animate-slide-up">
+    <div class="card-body-post">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <img src="avatar1.jpg" class="rounded-circle me-3" width="50" height="50" alt="User Avatar">
+          <div>
+            <h6 class="mb-0 fw-bold">Marcus Lee</h6>
+            <small class="text-muted">@marcus.lee • 10h ago</small>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-ellipsis-h text-muted"></i>
+        </div>
+      </div>
+  
+      <p class="mt-3 mb-2">
+        Just finished reading *Atomic Habits* — blown away by how small changes can lead to huge results. Highly recommend it to anyone looking to build better routines!
+      </p>
+  
+      <div class="d-flex justify-content-between text-muted small">
+        <span><i class="far fa-thumbs-up me-1 text-purple"></i>98 Likes</span>
+        <span><i class="far fa-comment me-1 text-purple"></i>19 Comments</span>
+        <span><i class="fas fa-share me-1 text-purple"></i>Share</span>
+      </div>
+    </div>
+  </div>
+<!-- post   -->
+
+<!-- post -->
+<div class="card mb-4 shadow-sm border-0 animate-slide-up">
+    <div class="card-body-post" >
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+          <img src="avatar3.jpg" class="rounded-circle me-3" width="50" height="50" alt="Challenge Icon">
+          <div>
+            <h6 class="mb-0 fw-bold">ConnectSphere Challenges</h6>
+            <small class="text-muted">@challenges • 2d ago</small>
+          </div>
+        </div>
+        <div>
+          <i class="fas fa-ellipsis-h text-muted"></i>
+        </div>
+      </div>
+  
+      <p class="mt-3 mb-2">
+        🚀 New Challenge Alert! <strong>"Code in 100 Lines"</strong><br>
+        Can you build something amazing with just 100 lines of code? Flex those skills and show us what you've got!
+      </p>
+  
+      <div class="bg-light p-3 rounded border border-purple mb-3">
+        <p class="mb-1"><strong>Starts:</strong> April 20, 2025</p>
+        <p class="mb-1"><strong>Rewards:</strong> 750 XP + Creator Badge</p>
+        <p class="mb-0"><strong>Theme:</strong> Minimal yet Functional</p>
+      </div>
+  
+      <button class="btn btn-purple w-100 fw-bold">Join Challenge</button>
+  
+      <div class="d-flex justify-content-between text-muted small mt-3">
+        <span><i class="far fa-thumbs-up me-1 text-purple"></i>412 Likes</span>
+        <span><i class="far fa-comment me-1 text-purple"></i>89 Comments</span>
+        <span><i class="fas fa-share me-1 text-purple"></i>Share</span>
+      </div>
+    </div>
+  </div>
+  <!-- post -->
+  <div class="post mb-4 p-3 bg-white shadow-sm rounded animate-slide-up">
+    <div class="d-flex justify-content-between card-body-post">
+      <div>
+        <img src="avatar5.jpg" class="rounded-circle me-3" width="50" height="50" alt="Challenge Icon">
+        <strong>Leon Wu</strong> <span class="text-muted">@inkystrokes</span>
+        <p>🎨 Here’s my entry for this week’s art challenge: *Future City*. Made entirely with digital inks and a neon palette. What do you think?</p>
+        <img src="https://source.unsplash.com/600x400/?futuristic,city" class="img-fluid rounded mt-2" alt="Art post" />
+      </div>
+      <div class="text-muted small">3h</div>
+    </div>
+    <div class="d-flex justify-content-between text-muted small mt-2">
+      <span><i class="far fa-thumbs-up me-1"></i>230</span>
+      <span><i class="far fa-comment me-1"></i>39</span>
+    </div>
+  </div>
+  <!-- post -->
+  <div class="post mb-4 p-3 bg-white shadow-sm rounded animate-slide-up">
+    <div class="d-flex justify-content-between card-body-post">
+      <div>
+        <img src="avatar3.jpg" class="rounded-circle me-3" width="50" height="50" alt="Challenge Icon">
+        <strong>ConnectSphere</strong> <span class="text-muted">@official</span>
+        <p>🏆 Congrats to <strong>@skywalker.draws</strong> for winning the *Weekly Art Challenge*! 🎉 You’ve earned the <span class="text-purple fw-bold">Creative Visionary</span> badge and 500 points!</p>
+        <img src="https://source.unsplash.com/600x400/?celebration,trophy" class="img-fluid rounded mt-2" alt="Winner post" />
+      </div>
+      <div class="text-muted small">1d</div>
+    </div>
+    <div class="d-flex justify-content-between text-muted small mt-2">
+      <span><i class="far fa-thumbs-up me-1"></i>160</span>
+      <span><i class="far fa-comment me-1"></i>22</span>
+    </div>
+  </div>
+<!-- post   -->
+<div class="post mb-4 p-3 bg-white shadow-sm rounded animate-slide-up">
+    <div class="d-flex justify-content-between card-body-post">
+      <div>
+        <img src="avatar1.jpg" class="rounded-circle me-3" width="50" height="50" alt="Challenge Icon">
+        <strong>Jason Kim</strong> <span class="text-muted">@jasonjumps</span>
+        <p>🌿 “You don’t have to see the whole staircase, just take the first step.” – MLK Jr. Keep pushing, one day at a time 💜</p>
+      </div>
+      <div class="text-muted small">5h</div>
+    </div>
+    <div class="d-flex justify-content-between text-muted small mt-2">
+      <span><i class="far fa-thumbs-up me-1"></i>102</span>
+      <span><i class="far fa-comment me-1"></i>9</span>
+    </div>
+  </div>
+<!-- post   -->
+<div class="card mb-4 shadow-sm border-0 animate-slide-up">
+  <div class="card-body-post">
+    <div class="d-flex justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="avatar2.jpg" class="rounded-circle me-3" width="50" height="50" alt="User Avatar">
+        <div>
+          <h6 class="mb-0 fw-bold">Sophie Carter</h6>
+          <small class="text-muted">@sophie.c • 30m ago</small>
+        </div>
+      </div>
+      <div>
+        <i class="fas fa-ellipsis-h text-muted"></i>
+      </div>
+    </div>
+
+    <p class="mt-3 mb-2">
+      Captured this moment during my weekend hike. Nature never fails to amaze 🌿✨
+    </p>
+
+
+    <div class="d-flex justify-content-between text-muted small">
+      <span><i class="far fa-thumbs-up me-1 text-purple"></i>245 Likes</span>
+      <span><i class="far fa-comment me-1 text-purple"></i>42 Comments</span>
+      <span><i class="fas fa-share me-1 text-purple"></i>Share</span>
+    </div>
+  </div>
+</div>
+<div class="post mb-4 p-3 bg-white shadow-sm rounded animate-slide-up">
+    <div class="d-flex justify-content-between card-body-post">
+      <div>
+        <img src="avatar3.jpg" class="rounded-circle me-3" width="50" height="50" alt="Challenge Icon">
+        <strong>ConnectSphere</strong> <span class="text-muted">@official</span>
+        <p>🏆 Congrats to <strong>@skywalker.draws</strong> for winning the *Weekly Art Challenge*! 🎉 You’ve earned the <span class="text-purple fw-bold">Creative Visionary</span> badge and 500 points!</p>
+        <img src="https://source.unsplash.com/600x400/?celebration,trophy" class="img-fluid rounded mt-2" alt="Winner post" />
+      </div>
+      <div class="text-muted small">1d</div>
+    </div>
+    <div class="d-flex justify-content-between text-muted small mt-2">
+      <span><i class="far fa-thumbs-up me-1"></i>160</span>
+      <span><i class="far fa-comment me-1"></i>22</span>
+    </div>
+  </div>
+  
+ 
+
+ 
+  </div>
+  
+        </div>
+      </main>
+    
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

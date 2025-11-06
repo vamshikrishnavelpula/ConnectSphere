@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fundify - Feed Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css">
+  <style>
+    
+  .footer {
+  font-size: 0.9rem;
+  background-color: #fff;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.footer .text-purple {
+  color: #6f42c1 !important;
+}
+
+.footer a.text-muted:hover {
+  color: #6f42c1 !important;
+  text-decoration: underline;
+}
+
+.footer i {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer i:hover {
+  color: #9370db;
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+     
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1050;
+    }
+    .sidebar:hover {
+    background-color: #6f42c1;
+
+    color: #fff;
+  }
+  
+
+    .cs-logo {
+      background-color: #6f42c1;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 40px;
+      left: 0;
+      width: 250px;
+      height: calc(100vh - 70px);
+      background-color: #8c5bf4;
+      padding-top: 2rem;
+      color: white;
+      overflow-y: auto;
+      z-index: 1040;
+    }
+
+    .right-panel {
+      position: fixed;
+      top: 70px;
+      right: 0;
+      width: 300px;
+      height: calc(100vh - 70px);
+      background-color: #f1f1f1;
+      overflow-y: auto;
+      z-index: 1040;
+    }
+
+    main {
+      margin-top: 70px;
+      margin-left: 250px;
+      margin-right: 300px;
+      padding: 20px;
+    }
+
+    .weekly-card {
+      padding: 20px;
+      border-radius: 12px;
+      width: 400px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .weekly-badge {
+      background-color: #ddd;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+    }
+
+    .weekly-progress {
+      height: 8px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .weekly-progress-bar {
+      height: 100%;
+      border-radius: 4px;
+    }
+
+    .btn-purple {
+      background-color: #6f42c1;
+      color: white;
+    }
+
+    .text-purple {
+      color: #6f42c1;
+    }
+
+    .trending-badge {
+      background-color: #e0e0ff;
+      color: #6f42c1;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="cs-logo me-2">CS</div>
+        <span class="connectsphere-text ms-2" style="font-family: 'Slackey', cursive;">ConnectSphere</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-bell"></i></a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary me-2" href="login.html" style="font-family: 'Slackey', cursive;">Login</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="signup.html" style="font-family: 'Slackey', cursive;">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside class="sidebar p-3">
+   
+    <ul class="nav flex-column text-white animate-slide-up" >
+        <li class="nav-item my-2">
+            <a class="nav-link" href="index.html" data-target="home-section" id="home-link"><i class="fas fa-home me-2 menu-item"></i><button> Home</button></a>
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link" href="community.html" data-target="commuity-section" id="feed-link"><i class="fas fa-compass me-2 menu-item"></i> Feed</a> 
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link" href="group-chats.html" data-target="message-section" id="messages-link"><i class="fas fa-envelope me-2 menu-item"></i> Messages <span class="badge bg-purple ms-1">7</span></a>
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link" href="group-chats.html" data-target="groups-section"id="groups-link"><i class="fas fa-money-bill me-2 menu-item"></i> Groups</a>
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link" href="challenges.html" id="challenges-link" data-target="challanges-section"><i class="fas fa-gift me-2 menu-item"></i> Challenges</a>
+          </li>
+          
+    </ul>
+    <div class="mt-auto">
+      <button class="btn btn-outline-light w-100 mb-2">Invite a Friend</button>
+      <button class="btn btn-purple w-100">Become a Creator</button>
+    </div>
+  </aside>
+
+  <!-- Right Panel -->
+  <aside class="right-panel p-3">
+    <div class="fundraiser-card bg-white p-3 rounded shadow-sm mb-4 animate-slide-up">
+        <h6 class="fw-bold">Fundraisers</h6>
+        <div class="mt-2">
+          <img src="avatar5.jpg" alt="Model" class="img-fluid rounded mb-2" />
+          <p><strong>Ava Wilson</strong> - Reveal Your Next Big Modeling Project!</p>
+          <p class="text-purple fw-bold">$1,980.00</p>
+          <div class="progress mb-2">
+            <div class="progress-bar bg-purple" style="width: 78%;"></div>
+          </div>
+          <a href="#" class="text-purple">View More</a>
+        </div>
+      </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Trending Topics -->
+      <div class="custom-card trending-card p-4 shadow-sm rounded mb-4">
+        <h5 class="mb-3 text-purple"><i class="bi bi-graph-up-arrow me-2"></i>Trending Topics</h5>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge trending-badge">#TechTalks</span>
+          <span class="badge trending-badge">#CodeReview</span>
+          <span class="badge trending-badge">#WebDev</span>
+          <span class="badge trending-badge">#CloudComputing</span>
+          <span class="badge trending-badge">#AI</span>
+          <span class="badge trending-badge">#ML</span>
+          <span class="badge trending-badge">#Devops</span>
+        </div>
+      </div>
+
+      <!-- Challenges Section -->
+      <div class="challenge-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+        <!-- Challenge Cards (You already have them, just paste here) -->
+        <!-- You can paste the same cards you had before for each challenge -->
+        <!-- Example Card -->
+        <div class="challenge-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+
+            <!-- Card 1 -->
+            <div class="weekly-card" style="background-color: #f0e0cf;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted fw-medium">Content Creators</span>
+                <span class="weekly-badge">Expert</span>
+              </div>
+              <h5 class="fw-bold">Legendary Content Creator</h5>
+              <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+                Create 10 original posts that receive at least 50 likes each. Establish yourself as a top creator!
+              </p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>125 participating</span>
+                <span>20% completed</span>
+              </div>
+              <div class="weekly-progress">
+                <div class="weekly-progress-bar" style="width: 20%; background-color: #6f42c1;"></div>
+              </div>
+              <a class="btn weekly-join-btn mt-3" href="challenge-card.html" style="background-color: #6f42c1; color: white;">Join Challenge</a>
+            </div>
+          
+            <!-- Card 2 -->
+            <div class="weekly-card" style="background-color: #e0f7fa;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted fw-medium">Fitness Fanatics</span>
+                <span class="weekly-badge">Medium</span>
+              </div>
+              <h5 class="fw-bold">7-Day Fitness Sprint</h5>
+              <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+                Complete daily workouts and track your progress for 7 consecutive days.
+              </p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>189 participating</span>
+                <span>60% completed</span>
+              </div>
+              <div class="weekly-progress">
+                <div class="weekly-progress-bar" style="width: 60%; background-color: #00bcd4;"></div>
+              </div>
+              <a class="btn weekly-join-btn mt-3" href="challenge-card.html" style="background-color: #00bcd4; color: white;">Join Challenge</a>
+            </div>
+          
+            <!-- Card 3 -->
+            <div class="weekly-card" style="background-color: #ffebee;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted fw-medium">Photographers</span>
+                <span class="weekly-badge">Easy</span>
+              </div>
+              <h5 class="fw-bold">Photography Challenge</h5>
+              <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+                Take photos following the theme "Reflections" and submit them for community feedback.
+              </p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>94 participating</span>
+                <span>45% completed</span>
+              </div>
+              <div class="weekly-progress">
+                <div class="weekly-progress-bar" style="width: 45%; background-color: #e57373;"></div>
+              </div>
+              <a class="btn weekly-join-btn mt-3" href="challenge-card.html" style="background-color: #e57373; color: white;">Join Challenge</a>
+            </div>
+          
+            <!-- Card 4 -->
+            <div class="weekly-card" style="background-color: #f3e5f5;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted fw-medium">Digital Artists</span>
+                <span class="weekly-badge">Medium</span>
+              </div>
+              <h5 class="fw-bold">Weekly Art Challenge</h5>
+              <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+                Create artwork based on the theme "Future City" and share it with the community.
+              </p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>287 participating</span>
+                <span>70% completed</span>
+              </div>
+              <div class="weekly-progress">
+                <div class="weekly-progress-bar" style="width: 70%; background-color: #9c27b0;"></div>
+              </div>
+              <a class="btn weekly-join-btn mt-3" href="challenge-card.html" style="background-color: #9c27b0; color: white;">Join Challenge</a>
+            </div>
+          
+            <!-- Card 5 -->
+            <div class="weekly-card" style="background-color: #fffde7;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted fw-medium">Book Club</span>
+                <span class="weekly-badge">Medium</span>
+              </div>
+              <h5 class="fw-bold">Book Reading Marathon</h5>
+              <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+                Read and discuss a new book with the community over the next 2 weeks.
+              </p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>142 participating</span>
+                <span>50% completed</span>
+              </div>
+              <div class="weekly-progress">
+                <div class="weekly-progress-bar" style="width: 50%; background-color: #ffb300;"></div>
+              </div>
+              <a class="btn weekly-join-btn mt-3" href="challenge-card.html" style="background-color: #ffb300; color: white;">Join Challenge</a>
+            </div>
+          
+            <!-- Card 6 -->
+            <div class="weekly-card" style="background-color: #e8f5e9;">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="text-muted fw-medium">Cooking & Recipes</span>
+                <span class="weekly-badge">Medium</span>
+              </div>
+              <h5 class="fw-bold">Cooking Challenge</h5>
+              <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+                Create a dish using the most innovative method and share your recipe.
+              </p>
+              <div class="d-flex justify-content-between small text-muted">
+                <span>110 participating</span>
+                <span>40% completed</span>
+              </div>
+              <div class="weekly-progress">
+                <div class="weekly-progress-bar" style="width: 40%; background-color: #66bb6a;"></div>
+              </div>
+              <a class="btn weekly-join-btn mt-3"  href="challenge-card.html" style="background-color: #66bb6a; color: white;">Join Challenge</a>
+            </div>
+          
+          </div>
+
+        
+
+        <!-- Paste other cards below -->
+        <!-- ... -->
+
+        <!-- challenge section -->
+         
+      </div>
+    </div>
+  </main>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

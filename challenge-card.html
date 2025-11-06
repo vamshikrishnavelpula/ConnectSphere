@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fundify - Feed Layout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css">
+  <style>
+    
+  .footer {
+  font-size: 0.9rem;
+  background-color: #fff;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.footer .text-purple {
+  color: #6f42c1 !important;
+}
+
+.footer a.text-muted:hover {
+  color: #6f42c1 !important;
+  text-decoration: underline;
+}
+
+.footer i {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer i:hover {
+  color: #9370db;
+}
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1050;
+      
+    }
+
+    .cs-logo {
+      background-color: #6f42c1;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 40px;
+      left: 0;
+      width: 250px;
+      padding-top:2rem;
+      height: calc(100vh - 70px);
+      background-color: #8c5bf4;
+      color: white;
+      overflow-y: auto;
+      z-index: 1040;
+    }
+
+    .right-panel {
+      position: fixed;
+      top: 70px;
+      right: 0;
+      width: 300px;
+      height: calc(100vh - 70px);
+      background-color: #f1f1f1;
+      overflow-y: auto;
+      z-index: 1040;
+    }
+
+    main {
+      margin-top: 70px;
+      margin-left: 250px;
+      margin-right: 300px;
+      padding: 20px;
+    }
+
+    .weekly-card {
+      padding: 20px;
+      border-radius: 12px;
+      width: 400px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .weekly-badge {
+      background-color: #ddd;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+    }
+
+    .weekly-progress {
+      height: 8px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .weekly-progress-bar {
+      height: 100%;
+      border-radius: 4px;
+    }
+
+    .btn-purple {
+      background-color: #6f42c1;
+      color: white;
+    }
+
+    .text-purple {
+      color: #6f42c1;
+    }
+
+    .trending-badge {
+      background-color: #e0e0ff;
+      color: #6f42c1;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+    
+
+    .challenge-card {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #6f42c1;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.challenge-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.challenge-card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Progress bar styling */
+.challenge-card .progress-bar {
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.challenge-card .progress-bar > div {
+  height: 100%;
+  background: linear-gradient(90deg, #6a5acd, #9370db);
+  transition: width 0.4s ease;
+  border-radius: 6px;
+}
+
+/* Task List */
+.challenge-card .task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.challenge-card .task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  transition:  0.3s ease;
+  font-size: 0.95rem;
+}
+
+.challenge-card .progress-bar > div {
+  height: 100%;
+  background: linear-gradient(90deg, #6a5acd, #9370db);
+  transition: width 0.4s ease;
+  border-radius: 6px;
+}
+
+.challenge-card .task-item.complete {
+  background-color: #e6ffe6;
+  color: #155724;
+}
+
+.challenge-card .task-item i {
+  min-width: 20px;
+}
+
+.challenge-card .status {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.text-purple {
+  color: #6f42c1 !important;
+}
+
+
+
+
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="cs-logo me-2">CS</div>
+        <span class="connectsphere-text ms-2" style="font-family: 'Slackey', cursive;">ConnectSphere</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-home"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-bell"></i></a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary me-2" href="login.html" style="font-family: 'Slackey', cursive;">Login</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="signup.html" style="font-family: 'Slackey', cursive;">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside class="sidebar p-3">
+   
+    <ul class="nav flex-column text-white animate-slide-up" >
+        <li class="nav-item my-2">
+            <a class="nav-link" href="index.html" data-target="home-section" id="home-link"><i class="fas fa-home me-2 menu-item"></i><button> Home</button></a>
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link" href="community.html" data-target="commuity-section" id="feed-link"><i class="fas fa-compass me-2 menu-item"></i> Feed</a> 
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link" href="group-chats.html" data-target="message-section" id="messages-link"><i class="fas fa-envelope me-2 menu-item"></i> Messages <span class="badge bg-purple ms-1">7</span></a>
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link" href="group-chats.html" data-target="groups-section"id="groups-link"><i class="fas fa-money-bill me-2 menu-item"></i> Groups</a>
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link" href="challenges.html" id="challenges-link" data-target="challanges-section"><i class="fas fa-gift me-2 menu-item"></i> Challenges</a>
+          </li>
+          
+    </ul>
+    <div class="mt-auto">
+      <button class="btn btn-outline-light w-100 mb-2">Invite a Friend</button>
+      <button class="btn btn-purple w-100">Become a Creator</button>
+    </div>
+  </aside>
+
+  <!-- Right Panel -->
+  <aside class="right-panel p-3">
+    <div class="fundraiser-card bg-white p-3 rounded shadow-sm mb-4 animate-slide-up">
+        <h6 class="fw-bold">Fundraisers</h6>
+        <div class="mt-2">
+          <img src="avatar5.jpg" alt="Model" class="img-fluid rounded mb-2" />
+          <p><strong>Ava Wilson</strong> - Reveal Your Next Big Modeling Project!</p>
+          <p class="text-purple fw-bold">$1,980.00</p>
+          <div class="progress mb-2">
+            <div class="progress-bar bg-purple" style="width: 78%;"></div>
+          </div>
+          <a href="#" class="text-purple">View More</a>
+        </div>
+      </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <!-- Trending Topics -->
+      <div class="custom-card trending-card p-4 shadow-sm rounded mb-4">
+        <h5 class="mb-3 text-purple"><i class="bi bi-graph-up-arrow me-2"></i>Trending Topics</h5>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge trending-badge">#TechTalks</span>
+          <span class="badge trending-badge">#CodeReview</span>
+          <span class="badge trending-badge">#WebDev</span>
+          <span class="badge trending-badge">#CloudComputing</span>
+          <span class="badge trending-badge">#AI</span>
+          <span class="badge trending-badge">#ML</span>
+          <span class="badge trending-badge">#Devops</span>
+        </div>
+      </div>
+
+      <!-- Challenges Section -->
+     <!-- Challenges Section -->
+<div class="challenge-card mb-5 shadow-sm animate-slide-up">
+    <h3 class="mb-2 text-purple"><i class="fas fa-code me-2"></i>Code in 100 Lines</h3>
+    <p class="mb-3">Build a functional app using no more than 100 lines of code. Be creative!</p>
+  
+    <!-- Progress Bar -->
+    <div class="progress-bar mb-3">
+      <div style="width: 60%;"></div>
+    </div>
+    <p class="text-muted small">60% complete</p>
+  
+    <!-- Task List -->
+    <ul class="task-list">
+      <li class="task-item complete">
+        <span><i class="fas fa-check-circle text-success me-2"></i>Choose your project</span> <span class="status">Complete</span>
+      </li>
+      <li class="task-item complete">
+        <span><i class="fas fa-check-circle text-success me-2"></i>Create initial code structure</span> <span class="status">Complete</span>
+      </li>
+      <li class="task-item">
+        <span><i class="fas fa-hourglass-half text-warning me-2"></i>Implement core functionality</span> <span class="status">In Progress</span>
+      </li>
+      <li class="task-item">
+        <span><i class="fas fa-clock text-secondary me-2"></i>Optimize and trim code</span> <span class="status">Pending</span>
+      </li>
+      <li class="task-item">
+        <span><i class="fas fa-paper-plane text-secondary me-2"></i>Submit final project</span> <span class="status">Pending</span>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- New Challenge Card -->
+  <div class="challenge-card shadow-sm animate-slide-up">
+    <h3 class="mb-2 text-purple"><i class="fas fa-lightbulb me-2"></i>UI Design Challenge</h3>
+    <p class="mb-3">Design an intuitive UI for a mobile finance app. Make it sleek and user-friendly.</p>
+  
+    <!-- Progress Bar -->
+    <div class="progress-bar mb-3">
+      <div style="width: 40%;"></div>
+    </div>
+    <p class="text-muted small">40% complete</p>
+  
+    <!-- Task List -->
+    <ul class="task-list">
+      <li class="task-item complete">
+        <span><i class="fas fa-check-circle text-success me-2"></i>Research finance apps</span> <span class="status">Complete</span>
+      </li>
+      <li class="task-item">
+        <span><i class="fas fa-pencil-alt text-warning me-2"></i>Create wireframes</span> <span class="status">In Progress</span>
+      </li>
+      <li class="task-item">
+        <span><i class="fas fa-paint-brush text-secondary me-2"></i>Apply color themes</span> <span class="status">Pending</span>
+      </li>
+      <li class="task-item">
+        <span><i class="fas fa-mobile-alt text-secondary me-2"></i>Prototype interactions</span> <span class="status">Pending</span>
+      </li>
+      <li class="task-item">
+        <span><i class="fas fa-check-double text-secondary me-2"></i>Submit design</span> <span class="status">Pending</span>
+      </li>
+    </ul>
+  </div>
+  
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConnectSphere Navbar</title>
+  <!-- Bootstrap CSS -->
+   <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> -->
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .footer {
+  font-size: 0.9rem;
+  background-color: #fff;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.footer .text-purple {
+  color: #6f42c1 !important;
+}
+
+.footer a.text-muted:hover {
+  color: #6f42c1 !important;
+  text-decoration: underline;
+}
+
+.footer i {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.footer i:hover {
+  color: #9370db;
+}
+
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <!-- CS Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="cs-logo me-2">CS</div>
+        <span class="connectsphere-text ms-2" style=" font-family: 'Slackey', cursive;">ConnectSphere</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link  " href="index.html"><i class="fas fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary me-2" href="login.html" style=" font-family: 'Slackey', cursive;">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="signup.html" style=" font-family: 'Slackey', cursive; ">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- hero section -->
+<div class="hero-section">
+    <div class="particles-container"><div class="particle"></div></div>
+    <div class="hero-section-right">
+        <button class="gradient-button">
+            <span class="icon">✨</span>
+            <span>A new way to connect</span>
+          </button>
+        <h1 class="hero-title">Connect. Share. <span class="gradient-color">Thrive</span> <span class="gradient-color">Together</span>.</h1>
+        <p class="hero-description">Join communities based on your interests, engage in real-time conversations, and build <span class="gradient-color">meaningful connections</span> in an interactive social experience.</p>
+        <a class="btn btn-primary btn-lg sphere-but" href="community.html">Join the Sphere
+            <i class="fas fa-arrow-right arrow-hover" style="font-size: 1rem; color: #f9f9f9;"></i>
+        </a>
+        <a class="btn btn-outline-secondary btn-lg learnmore-but" href="#featured-section"
+        >Learn more</a>
+    
+        <div class="progress-container " style="margin-right: 0px;"> 
+            <div class="targetlogo"><div class="concentric-circles">
+                <div class="inner-circle">
+                   <div class="smallest-circle"></div>
+                </div>
+              </div></div>
+               
+         <div class="dailymission"> 
+            <div class="daily" style="font-weight: bold;">Daily Mission</div>
+         <div class="mission">Join 3 new groups today (+20 XP)</div>
+        </div>
+          <div class="progress" style="height: 20px; width: 50%; display: flex; align-items: end; margin-left: 30px;">
+            <div id="progress-bar" class="progress-bar" style="width: 20%; align-self: end;">1/3 complete</div>
+          </div>
+        </div>
+    </div>
+     <div class="hero-section-left">
+        <div class="circle-container">
+           <div class="circle-shape">
+            <div class="circle-item tech-enthusiasts">  <i class="fas fa-laptop-code"></i>Tech Enthusiasts</div>
+            <div class="circle-item fitness-group"> <i class="fas fa-dumbbell"></i>Fitness</div>
+            <div class="circle-item art-community"> <i class="fas fa-palette"></i>Art Community</div>
+            <div class="circle-item travel-explorers">  <i class="fas fa-plane"></i> Travel Explorers</div>
+            <div class="circle-item instant">  <i class="fas fa-bolt" style="width: 3rem; height: 3rem;"></i> </div>
+            <div class="circle-item weekly-meet"> <i class="fas fa-users"></i> Weekly Meet</div>
+        </div>
+          </div>
+    
+     </div>
+</div>
+ <!-- Feature experience    -->
+ <section class="featured-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4" style="font-weight: bold;">Featured Experiences</h2>
+    <p class="text-center text-muted mb-5">Discover the interactive features that make ConnectSphere a vibrant community platform.</p>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card experience-card border-glow-primary">
+          <div class="card-body ">
+            <div class="icon-box bg-light-primary">
+              <i class="bi bi-people-fill text-primary"></i>
+            </div>
+            <h5 class="card-title mt-3">Interest-Based Groups</h5>
+            <p class="card-text text-muted">Join communities based on your passions, from tech to art, fitness to travel.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card experience-card border-glow-warning">
+          <div class="card-body ">
+            <div class="icon-box bg-light-warning">
+              <i class="bi bi-chat-square-text-fill text-warning"></i>
+            </div>
+            <h5 class="card-title mt-3">Interactive Posts</h5>
+            <p class="card-text text-muted">Create engaging posts with GIFs, emojis, polls, and get real-time reactions.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card experience-card border-glow-info">
+          <div class="card-body ">
+            <div class="icon-box bg-light-info">
+              <i class="bi bi-chat-dots-fill text-info"></i>
+            </div>
+            <h5 class="card-title mt-3">Real-Time Chats</h5>
+            <p class="card-text text-muted">Engage in dynamic conversations with typing indicators and notifications.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card experience-card border-glow-success">
+          <div class="card-body ">
+            <div class="icon-box bg-light-success">
+              <i class="bi bi-bar-chart-fill text-success"></i>
+            </div>
+            <h5 class="card-title mt-3">Social Polling</h5>
+            <p class="card-text text-muted">Participate in polls and surveys to share your opinions with the community.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-4">
+        <div class="card experience-card border-glow-danger">
+          <div class="card-body ">
+            <div class="icon-box bg-light-danger">
+              <i class="bi bi-person-badge-fill text-danger"></i>
+            </div>
+            <h5 class="card-title mt-3">Custom Profiles</h5>
+            <p class="card-text text-muted">Create a profile that reflects your personality and preferences.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-4">
+        <div class="card experience-card border-glow-secondary">
+          <div class="card-body ">
+            <div class="icon-box bg-light-secondary">
+              <i class="bi bi-trophy-fill text-secondary"></i>
+            </div>
+            <h5 class="card-title mt-3">Weekly Challenges</h5>
+            <p class="card-text text-muted">Take on challenges to stay motivated and compete with others.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+Popular communities -->
+<div class="popular-section">
+  <div class="popular-header">
+    <h2>Popular Communities ✨</h2>
+    <p>Find your tribe and connect with people who share your interests</p>
+  </div>
+  <div class="popular-controls">
+    <div class="popular-actions">
+      <input type="text" placeholder="Search communities..." class="popular-search-box" />
+      <button class="popular-filter-btn">Filter</button>
+      <a class="popular-view-all-btn" href="community.html">View All <i class="fas fa-arrow-right arrow-hover" style="font-size: 1rem; color: #f9f9f9;"></i></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Communitry card -->
+<div class="container">
+  <div class="row gy-4">
+    <!-- First Card -->
+    <div class="col-md-3">
+      <div class="custom-card-container">
+        <div class="custom-gradient-header">
+          <div class="custom-card-header">
+            <h5><i class="fas fa-users"></i> Community</h5>
+            <span class="custom-badge"><i class="fas fa-trophy"></i> Popular</span>
+          </div>
+          <h3 class="custom-card-title">Tech Enthusiasts</h3>
+        </div>
+        <div class="custom-card-body">
+          <p class="custom-card-description">
+            Discuss the latest in tech, share projects, and solve coding problems together.
+          </p>
+          <div class="custom-tags">
+            <span>Technology</span>
+            <span>Coding</span>
+            <span>Popular</span>
+          </div>
+          <div class="d-flex justify-content-between my-3">
+            <div>
+              <strong>4,208</strong>
+              <p>Members</p>
+            </div>
+            <div>
+              <strong>128</strong>
+              <p>Active</p>
+            </div>
+            <div>
+              <strong>15,823</strong>
+              <p>Posts</p>
+            </div>
+          </div>
+          <div class="custom-footer d-flex justify-content-between">
+            <p><i class="fas fa-clock"></i> Active 2 minutes ago</p>
+            <a  href="group-chats.html" class="custom-join-btn">Join ✨</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Card -->
+    <div class="col-md-3">
+      <div class="custom-card-container">
+        <div class="custom-gradient-header">
+          <div class="custom-card-header">
+            <h5><i class="fas fa-paint-brush"></i> Community</h5>
+            <span class="custom-badge"><i class="fas fa-star"></i> Featured</span>
+          </div>
+          <h3 class="custom-card-title">Digital Artists</h3>
+        </div>
+        <div class="custom-card-body">
+          <p class="custom-card-description">
+            Share your artwork, explore techniques, and collaborate with fellow artists from around the world.
+          </p>
+          <div class="custom-tags">
+            <span>Art</span>
+            <span>Design</span>
+            <span>Creativity</span>
+          </div>
+          <div class="d-flex justify-content-between my-3">
+            <div>
+              <strong>3,672</strong>
+              <p>Members</p>
+            </div>
+            <div>
+              <strong>95</strong>
+              <p>Active</p>
+            </div>
+            <div>
+              <strong>12,459</strong>
+              <p>Posts</p>
+            </div>
+          </div>
+          <div class="custom-footer d-flex justify-content-between">
+            <p><i class="fas fa-clock"></i> Active 5 minutes ago</p>
+            <a  href="group-chats.html" class="custom-join-btn">Join ✨</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Card -->
+    <div class="col-md-3">
+      <div class="custom-card-container">
+        <div class="custom-gradient-header">
+          <div class="custom-card-header">
+            <h5><i class="fas fa-dumbbell"></i> Community</h5>
+            <span class="custom-badge"><i class="fas fa-fire"></i> Trending</span>
+          </div>
+          <h3 class="custom-card-title">Fitness Fanatics</h3>
+        </div>
+        <div class="custom-card-body">
+          <p class="custom-card-description">
+            Connect with fitness lovers, share workout tips, and track progress together towards a healthier lifestyle.
+          </p>
+          <div class="custom-tags">
+            <span>Fitness</span>
+            <span>Health</span>
+            <span>Wellness</span>
+          </div>
+          <div class="d-flex justify-content-between my-3">
+            <div>
+              <strong>5,843</strong>
+              <p>Members</p>
+            </div>
+            <div>
+              <strong>220</strong>
+              <p>Active</p>
+            </div>
+            <div>
+              <strong>8,192</strong>
+              <p>Posts</p>
+            </div>
+          </div>
+          <div class="custom-footer d-flex justify-content-between">
+            <p><i class="fas fa-clock"></i> Active 10 minutes ago</p>
+            <a  href="group-chats.html" class="custom-join-btn">Join ✨</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Card -->
+    <div class="col-md-3">
+      <div class="custom-card-container">
+        <div class="custom-gradient-header">
+          <div class="custom-card-header">
+            <h5><i class="fas fa-plane"></i> Community</h5>
+            <span class="custom-badge"><i class="fas fa-map-marker-alt"></i> Wanderlust</span>
+          </div>
+          <h3 class="custom-card-title">Travel Explorers</h3>
+        </div>
+        <div class="custom-card-body">
+          <p class="custom-card-description">
+            Discover breathtaking destinations, share travel tips, and explore the world with fellow wanderers.
+          </p>
+          <div class="custom-tags">
+            <span>Travel</span>
+            <span>Adventure</span>
+            <span>Exploration</span>
+          </div>
+          <div class="d-flex justify-content-between my-3">
+            <div>
+              <strong>4,529</strong>
+              <p>Members</p>
+            </div>
+            <div>
+              <strong>185</strong>
+              <p>Active</p>
+            </div>
+            <div>
+              <strong>10,374</strong>
+              <p>Posts</p>
+            </div>
+          </div>
+          <div class="custom-footer d-flex justify-content-between">
+            <p><i class="fas fa-clock"></i> Active 15 minutes ago</p>
+            <a  href="group-chats.html" class="custom-join-btn">Join ✨</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section of challenges  -->
+ <section class="weekly-challange-section">
+  <div class="weekly-challenges">
+    <h1>Weekly Challenges</h1>
+    <p>Test your skills, showcase your talents, and earn rewards by participating in community challenges.</p>
+    
+    <div class="challenge-info">
+      <div class="level-info">
+        <button class="level-button gradient-button"><i class="fa-solid fa-star star-icon"></i> Level 3</button>
+        <span>65/100 XP</span>
+        <div class="progress-bar-weekly">
+          <div class="progress-fill" style="width: 65%;"></div>
+        </div>
+        <p>65/100 to next level</p>
+      </div>
+      <div class="points-rank">
+        <p><i class="fa-solid fa-bolt thunder-icon"></i><strong>1500 points</strong></p>
+        <p><i class="fa-solid fa-trophy trophy-icon"></i> Rank: Explorer</p>
+      </div>
+    </div>
+  </div>
+  <!-- challanges card -->
+
+  <div class="container py-5">
+    <div class="weekly-challenge-container">
+      <!-- Weekly Art Challenge Card -->
+      <div class="weekly-card" style="background-color: #ffe1c9;">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="text-muted fw-medium">Digital Artists</span>
+          <span class="weekly-badge">Intermediate</span>
+        </div>
+        <h5 class="fw-bold">Weekly Art Challenge</h5>
+        <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+          Create artwork based on the theme "Future City" and share with the community.
+        </p>
+        <div class="d-flex justify-content-between small text-muted">
+          <span>287 participating</span>
+          <span>70% completed</span>
+        </div>
+        <div class="weekly-progress">
+          <div class="weekly-progress-bar"></div>
+        </div>
+        <div class="weekly-points-section mt-2">
+          <span>500 pts</span>
+          <span class="weekly-points-badge">Creative Visionary</span>
+        </div>
+        <a class="btn weekly-join-btn mt-3" href="challenges.html" style="background-color: #6f42c1; color: white;">Join Challenge</a>
+      </div>
+  
+      <!-- Space left for additional cards -->
+      <div class="weekly-card" style="background-color: #d9f0ff;">
+        
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="text-muted fw-medium">Tech Enthusiasts</span>
+            <span class="weekly-badge">Advanced</span>
+          </div>
+          <h5 class="fw-bold">Code in 100 Lines</h5>
+          <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+            Build a functional app using no more than 100 lines of code. Be creative!
+          </p>
+          <div class="d-flex justify-content-between small text-muted">
+            <span>342 participating</span>
+            <span>50% completed</span>
+          </div>
+          <div class="weekly-progress">
+            <div class="weekly-progress-bar" style="width: 50%; background-color: #005eab;"></div>
+          </div>
+          <div class="weekly-points-section mt-2">
+            <span>750 pts</span>
+            <span class="weekly-points-badge">Code Wizard</span>
+          </div>
+          <a class="btn weekly-join-btn mt-3"  href="challenges.html" style="background-color: #6f42c1; color: white;" >Join Challenge</a>
+        
+        
+      </div>
+      <div class="weekly-card" style="background-color: #def5e6;">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="text-muted fw-medium">Fitness Fanatics</span>
+          <span class="weekly-badge">Beginner</span>
+        </div>
+        <h5 class="fw-bold">7-Day Fitness Sprint</h5>
+        <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+          Complete daily workouts and track your progress for 7 consecutive days.
+        </p>
+        <div class="d-flex justify-content-between small text-muted">
+          <span>189 participating</span>
+          <span>60% completed</span>
+        </div>
+        <div class="weekly-progress">
+          <div class="weekly-progress-bar" style="width: 60%; background-color: #6f42c1;"></div>
+        </div>
+        <div class="weekly-points-section mt-2">
+          <span>350 pts</span>
+          <span class="weekly-points-badge">Fitness Champion</span>
+        </div>
+        <a class="btn weekly-join-btn mt-3"   href="challenges.html" style="background-color: #6f42c1; color: white;">Join Challenge</a>
+      </div>
+      
+      <div class="weekly-card" style="background-color: #f0e0cf;">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="text-muted fw-medium">Content Creators</span>
+          <span class="weekly-badge">Expert</span>
+        </div>
+        <h5 class="fw-bold">Legendary Content Creator</h5>
+        <p class="mb-2 text-muted" style="font-size: 0.9rem;">
+          Create 10 original posts that receive at least 50 likes each. Establish yourself as a top creator!
+        </p>
+        <div class="d-flex justify-content-between small text-muted">
+          <span>125 participating</span>
+          <span>20% completed</span>
+        </div>
+        <div class="weekly-progress">
+          <div class="weekly-progress-bar" style="width: 20%; background-color: #6f42c1;"></div>
+        </div>
+        <div class="weekly-points-section mt-2">
+          <span>1200 pts</span>
+          <span class="weekly-points-badge">Content Legend</span>
+        </div>
+        <a class="btn weekly-join-btn mt-3"  href="challenges.html" style="background-color: #6f42c1; color: white; ">Join Challenge</a>
+      </div>
+      
+    </div>
+  </div>
+
+
+    
+
+ </section>
+ <!-- Footer -->
+<footer class="footer bg-white border-top mt-5 py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div class="mb-3 mb-md-0">
+      <span class="fw-bold text-purple" style="font-family: 'Slackey', cursive;">ConnectSphere</span> © 2025. All rights reserved.
+    </div>
+    <ul class="list-inline mb-3 mb-md-0">
+      <li class="list-inline-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+      <li class="list-inline-item"><a href="community.html" class="text-decoration-none text-muted">Feed</a></li>
+      <li class="list-inline-item"><a href="group-chats.html" class="text-decoration-none text-muted">Messages</a></li>
+      <li class="list-inline-item"><a href="challenges.html" class="text-decoration-none text-muted">Challenges</a></li>
+    </ul>
+    <div>
+      <a href="#" class="text-purple me-3"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-purple me-3"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-purple me-3"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-purple"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+ <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
